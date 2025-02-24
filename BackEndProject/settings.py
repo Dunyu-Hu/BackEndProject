@@ -110,7 +110,7 @@ LOCAL_DATABASE = {
 
 # 如果 Railway 提供了 DATABASE_URL，就用它，否则用本地数据库
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('postgresql://postgres:GIkJwztFmOwhlpCNuKdLPmlckdPkmEdU@nozomi.proxy.rlwy.net:38362/railway', None))
+    'default': dj_database_url.config(default=os.getenv('postgresql://postgres:GIkJwztFmOwhlpCNuKdLPmlckdPkmEdU@postgres.railway.internal:5432/railway', None))
                or LOCAL_DATABASE
 }
 
