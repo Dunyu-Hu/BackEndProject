@@ -119,8 +119,11 @@ LOCAL_DATABASE = {
 
 # 如果 Railway 提供了 DATABASE_URL，就用它，否则用本地数据库
 
+# DATABASES = {
+#     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+# }
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default=os.getenv('DATABASE_PUBLIC_URL'))
 }
 # DATABASES = {
 #     'default': dj_database_url.config(default=os.getenv('postgresql://postgres:GIkJwztFmOwhlpCNuKdLPmlckdPkmEdU@postgres.railway.internal:5432/railway', None))
