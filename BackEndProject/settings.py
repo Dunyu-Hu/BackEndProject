@@ -38,6 +38,10 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    "https://hdybackendtest.up.railway.app"
+]
+
 
 
 # Application definition

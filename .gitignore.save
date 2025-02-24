@@ -1,0 +1,20 @@
+# 忽略环境变量文件
+.env
+
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略虚拟环境
+venv/
+env/
+
+# 忽略数据库文件（如果本地使用 SQLidb.sqlite3
+
+# ignore log
+*.log
+
+# igonre IDE
+.vscode/
+.idea/
