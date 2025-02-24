@@ -1,0 +1,20 @@
+# ignore env parameters
+.env
+
+# ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# ignore virtual env
+venv/
+env/
+
+db.sqlite3
+
+# ignore log
+*.log
+
+# ignore IDE
+.vscode/
+.idea/
